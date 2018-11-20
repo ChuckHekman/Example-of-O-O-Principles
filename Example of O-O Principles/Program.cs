@@ -5,10 +5,9 @@ using System.Collections.Generic;
  
 Author:     Chuck Hekman, 11/1/2018
 
-Purpose:    Written as a small example of abstraction, inheritance, encapsulation and polymorphism
+Purpose:    Written as a small example of Inheritance, Encapsulation and Polymorphism
 
-Goals       Example of Abstraction
-            Example of Inheritance
+Goals       Example of Inheritance
             Example of Encapsulation
             Example of Polymorphism
             Example of a class that performs input editting
@@ -76,12 +75,14 @@ namespace Example_of_O_O_Principles
 
         static void WelcomeMessage()
         {
-            Console.WriteLine("Welcome to Chuck's exercise on Abstraction, Inheritance, Encapsulation and Polymorphism");
+            Console.WriteLine("\nWelcome to Chuck's exercise on Inheritance, Encapsulation and Polymorphism");
             Console.WriteLine("");
             Console.WriteLine("The user will have an opportunity to select the pay type they wish" +
                 "\nand then enter the total amount of the sale." +
                 "\nThen a subclass will be instantiated for that pay type." +
-                "\nEach pay type will have additional prompts appropriate to that specific type");
+                "\nEach pay type will have additional prompts appropriate to that specific type." +
+                "\n\nOnce the user has chosen to not continue, an appropriate listing will be shown " +
+                "for each transaction performed.");
         }
 
         static List<string> LoadPaymentOptions()
